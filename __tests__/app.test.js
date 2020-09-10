@@ -1,5 +1,6 @@
 import {
   // methods,
+  sortArray,
   findItem,
   evensOnlyAndDoubleArray,
   someNumbersAreOdd,
@@ -67,5 +68,13 @@ describe("evensOnlyAndDoubleArray Test",()=>{
 describe("findItem Test",()=>{
   test("findItem find an item method return 'not found' if not found",()=>{
   expect(findItem([1,2,3,4])).toEqual(1);
+  })
+});
+
+
+//sortArray
+describe("sortArray Test",()=>{
+  test("sortArray sort array desc order",()=>{
+  expect(sortArray([1,2,3,4])).toEqual([4,3,2,1]);
   })
 });

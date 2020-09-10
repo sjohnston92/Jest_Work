@@ -55,7 +55,17 @@ export function evensOnlyAndDoubleArray(numberArray){
   })
 }
 
-// findItem
+// findItem*
 export function findItem(numberArray){
-  
+  const found = numberArray.find(element => element === 1);
+    if (found != 1){
+    console.log("not found");
+    }
+    return found;
+}
+
+//sortArray
+
+export function sortArray(numberArray){
+  return numberArray.sort((a,b)=>b-a)
 }
