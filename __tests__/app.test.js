@@ -1,5 +1,6 @@
 import {
   // methods,
+  arraySum,
   evensOnlyArray,
   doubleArray,
   originalArray
@@ -17,7 +18,7 @@ describe("doubleArray Test",()=> {
   test('doubleArray should return double the value for each instance',()=>{
     expect(doubleArray([1,2,3,4])).toEqual([2,4,6,8]);
   })
-})
+});
 
 
 //evensOnlyArray(numberArray) have this array return only numbers
@@ -25,4 +26,11 @@ describe("evensOnlyArray Test",()=>{
   test("evensOnlyArray should return only the even numbers from the array",()=>{
     expect(evensOnlyArray([1,2,3,4])).toEqual([2,4]);
   })
-})
+});
+
+
+describe("arraySum Test",()=>{
+  test("arraySum should return array with sum of numbers",()=>{
+    expect(arraySum([1,2,3,4])).toEqual(10);
+  })
+});
